@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Home</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .split {
+            height: 100%;
+            width: 30%;
+            position: fixed;
+            z-index: 1;
+            top: 10px;
+            overflow-x: hidden;
+            padding-top: 30px;
+        }
+
+        .left {
+            left: 100px;
+
+            background-color: #a6bddb;
+        }
+
+        .right {
+            right: 100px;
+
+            background-color: #ffffff;
+            width: 800px;
+
+
+        }
+
+        .img {
+            border-radius: 50%;
+            position: relative;
+            left: 70px;
+        }
+
+        /*#faebd7*/
+        hr.new4 {
+            border: 2px solid #725c5c;
+            position: relative;
+            left: 250px
+        }
+
+        .checked {
+            color: #725c5c;
+
+            /*padding-left: 20px;*/
+        }
+
+        .check {
+            color: #cdc8b1;
+        }
+
+        hr.new3 {
+            border: 2px solid #725c5c;
+            position: relative;
+            left: 1px
+        }
+
+        .a {
+            position: relative;
+            left: 90px;
+            font-size: x-large;
+
+        }
+
+        .b {
+            position: relative;
+            left: 60px;
+            font-size: medium;
+            font-style: oblique;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        a:active,
+        a:hover {
+            outline: 0;
+        }
+
+        nav.navbar li a {
+            color: rgb(55, 55, 56);
+
+            font-family: 'Alegreya', serif;
+            font-size: larger;
+            position: relative;
+            left: 60px;
+            padding: 15px;
+
+            text-decoration: underline;
+        }
+
+        nav.navbar li a:hover {
+            text-decoration: rgb(54, 42, 133);
+            color: rgb(54, 42, 133);
+        }
+
+        .card {
+            float: left;
+            background-color: skyblue;
+            padding: 10px;
+            margin: 10px;
+            width: 600px;
+            height: 200px;
+            border-radius: 10px;
+
+        }
+
+        .img1 {
+            margin-left: -20px;
+            /* margin: bst5dmo fl z2 2l elments*/
+            position: absolute;
+            top: -20px;
+            border-radius: 60%;
+
+            /*by7rk 3onsor wa7d bs while padding by7rk kolo*/
+        }
+
+        .img2 {
+            margin-left: 550px;
+            /* margin: bst5dmo fl z2 2l elments*/
+            position: absolute;
+            top: 320px;
+            border-radius: 60%;
+
+            /*by7rk 3onsor wa7d bs while padding by7rk kolo*/
+        }
+
+        .card2 {
+            float: right;
+            background-color: rgb(179, 152, 255);
+            padding: 10px;
+            margin: 10px;
+            width: 600px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .row {
+            margin: 15px;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                // $("#div1").fadeIn();
+                // $("#div2").fadeIn("slow");
+                $("#div1").css({ "background-color": "skyblue", "width": "600px", "height": "200px", "padding": "10px", "border-radius": "10px" });
+                $("#div1").fadeIn(2000);
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button2").click(function () {
+                // $("#div1").fadeIn();
+                // $("#div2").fadeIn("slow");
+                $("#div2").css({ "background-color": "rgb(179, 152, 255)", "width": "600px", "height": "200px", "padding": "20px", "border-radius": "10px" });
+                $("#div2").fadeIn(2000);
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button3").click(function () {
+                // $("#div1").fadeIn();
+                // $("#div2").fadeIn("slow");
+                $("#div3").css({ "background-color": "skyblue", "width": "600px", "height": "200px", "padding": "20px", "border-radius": "10px" });
+                $("#div3").fadeIn(2000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="split left">
+        <div class="centered">
+            <img class="img" src="imgs/1.jpg" width="30%">
+            <p class="a" style="position: relative;font-family:'Slabo 27px', serif;">Aya Adel</p>
+            <span class="b" style="font-family:'Cinzel', serif;"><a href="#">UI/UX/Designer</a> in Egypt</span>
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="#"></a>
+                <ul style="list-style: none;">
+                    <li class="active"><a href="#home" data-nav-section="home">Home</a></li>
+                    <br>
+                    <li><a href="#skills" data-nav-section="">Skills</a></li>
+                    <br>
+                    <li><a href="#eductation" data-nav-section="home">Education</a></li>
+                    <br>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </div>
+        </nav>
+       
+        </div>
+<!--  -->
+
+   
+<!--  -->
+    </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+
+            <section class="hero-area" style="position: relative;top:-50px" id="home">
+                <div class="hero-slides owl-carousel">
+                    <!-- Single Hero Slide -->
+                    <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(imgs/7.jpg);">
+                        <div class="container h-100">
+                            <div class="row h-50 align-items-center">
+                                <div class="col-12">
+                                    <div class="hero-slides-content">
+                                        <h2 data-animation="fadeInUp" data-delay="100ms">Hi <br>I'am Aya Adel
+                                            <br>Student At SIM</h2>
+
+
+
+
+                                        <!-- end button -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Hero Slide -->
+                    <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(imgs/4.jpg);">
+                        <div class="container h-100">
+                            <div class="row h-50 align-items-center">
+                                <div class="col-12">
+                                    <div class="hero-slides-content">
+                                        <h2 data-animation="fadeInUp" data-delay="100ms">Hi <br>I'am Aya Adel
+                                            <br>Student At SIM</h2>
+
+                                        <!-- <a href="#" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Login <span>+</span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <section class="our-skills-area text-center section-padding-100-0" data-section="skills">
+                    <div class="container">
+                        <div class="row">
+                            <span>
+                                <h2 id="skills" style="text-decoration:underline #a6bddb;padding:15px">Skills:-</h2>
+                            </span>
+                        </div>
+                        <br>
+                        <!-- <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="single-pie-bar" data-percent="90"style="color: cornflowerblue;">
+                                <canvas class="bar-circle" width="50" height="50" ></canvas>
+                                <h5>JavaScript</h5>
+                               
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2"> -->
+                        <div style="position: absolute;left:50px">
+                            <div class="single-pie-bar" data-percent="75">
+                                <canvas class="bar-circle" width="100" height="100"></canvas>
+                                <h5>Web</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2" style="position: absolute;left:180px">
+                            <div class="single-pie-bar" data-percent="40">
+                                <canvas class="bar-circle" width="100" height="100"></canvas>
+                                <h5>JavaScript</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-md-2" style="position: absolute;left:280px">
+                            <div class="single-pie-bar" data-percent="60">
+                                <canvas class="bar-circle" width="100" height="100"></canvas>
+                                <h5>Java</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2" style="position: absolute;left:450px">
+                            <div class="single-pie-bar" data-percent="38">
+                                <canvas class="bar-circle" width="100" height="100"></canvas>
+                                <h5>GameProgramming</h5>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2" style="position: absolute;left:650px">
+                            <div class="single-pie-bar" data-percent="83">
+                                <canvas class="bar-circle" width="100" height="100"></canvas>
+                                <h5>Photoshop</h5>
+
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+
+        </section>
+
+        <section>
+            <div class="container" style="position: relative;top:200px;margin-bottom:500px;">
+                <div class="row">
+                    <span>
+                        <h2 id="eductation" style="text-decoration:underline #a6bddb;padding:15px">Education:-</h2>
+                    </span>
+
+                </div>
+                <div class="container">
+                    <div class="card" style="background-color:white;border-color: white;z-index:-1">
+                        <button id="button" class="img1 btn-primary" style="border-radius:50%;width:12%;"> <img
+                                src="imgs/g.png"></button>
+                        <div style="display: none; " id="div1">
+                            <br>
+                            <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quod amet aut? Tempora
+                                voluptatem,
+                                ullam exercitationem, nam alias sequi laboriosam nobis repellat esse modi iste sed neque
+                                reiciendis non ipsum?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card2" style="background-color:white;border-color: white;z-index:-1">
+                        <button id="button2" class="img2 btn-primary" style="border-radius:50%;width:8%;"> <img
+                                src="imgs/school.png"></button>
+                        <div style="display: none;" id="div2">
+                            <br>
+                            <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quod amet aut? Tempora
+                                voluptatem,
+                                ullam exercitationem, nam alias sequi laboriosam nobis repellat esse modi iste sed neque
+                                reiciendis non ipsum?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card" style="background-color:white;border-color: white;">
+                        <button id="button3" class="img1 btn-primary" style="border-radius:50%;width:10%;"> <img
+                                src="imgs/creativity.png"></button>
+                        <div style="display:none" id="div3">
+                            <br>
+                            <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quod amet aut? Tempora
+                                voluptatem,
+                                ullam exercitationem, nam alias sequi laboriosam nobis repellat esse modi iste sed neque
+                                reiciendis non ipsum?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container" style="position: relative;top:400px;margin-bottom:450px;">
+                <div class="row">
+                    <span style="position: relative;right:650px">
+                        <h2 id="contact" style="text-decoration:underline #a6bddb;padding:15px">Contact:-</h2>
+                    </span>
+                </div>
+               <br>
+               <br>
+                         <a> <img src="imgs/facebook.png" width="6%"style="position: relative;top:-10px;right:560px;margin-bottom:30px;"></a>
+                        
+                        <a> <img src="imgs/instagram.png" width="6%"style="position:absolute;top:230px;right:650px;margin-bottom:30px;"></a>
+                        
+                        <a> <img src="imgs/twitter.png" width="6%"style="position:absolute;top:330px;right:650px;margin-bottom:30px;"></a>
+                        
+                        <a> <img src="imgs/whatsapp.png" width="6%"style="position:absolute;top:430px;right:650px;margin-bottom:30px;"></a>
+            </div>
+            <fieldset  style="width:40%;position:absolute;top:2300px;right:200px;border: 2px solid rgb(65, 33, 139);padding:10px">
+                    <form>
+                           <center> <div class="">
+                              <div class="form-group col-md-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="">
+                              </div>
+                           
+                            <div class="form-group col-md-12">
+                              <label for="inputAddress">Password</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="">
+                            </div>
+                        
+                            <div>
+                                    <label for="inputAddress">Message</label>
+                            <textarea class="form-control" style="width:300px;height:50px;">
+
+                            </textarea>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form></center>
+            </fieldset >
+            
+        </section>
+        <footer class="footer-area section-padding-40"style="position: relative;top:400px;margin-bottom:px;background-color:#89ADDB">       
+             <div class="main-footer-area">
+                <div class="container-fluid">
+                    <div class="row">
+    
+                        <div class="col-12 col-sm-6 col-xl-4">
+                            <div class="footer-widget-area">
+                               
+                                <div class="footer-social-info">
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-footer-area">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="bottom-footer-content">
+                                                <!-- Copywrite Text -->
+                                                <div class="copywrite-text">
+                                                    <p style="color: rgb(55, 55, 56)"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"style="color: rgb(55, 55, 56)">Aya Adel</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                    <p style="color: rgb(55, 55, 56)">Re-distributed by <a href="#" target="_blank" style="color: rgb(55, 55, 56)">Aya Adel</a>
+                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    </footer>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
